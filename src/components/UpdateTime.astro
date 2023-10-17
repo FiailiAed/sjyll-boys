@@ -1,0 +1,14 @@
+---
+interface Props {
+	date: string;
+	day: string;
+	time: string;
+}
+
+const { date, day, time } = Astro.props;
+---
+<footer class="text-center p-4">
+	<span class="text-[rgb(224,204,250)]">
+		Last Updated:<br>{date} - {day}<br>@ {time} 
+	</span>
+</footer>
